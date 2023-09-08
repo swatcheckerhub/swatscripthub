@@ -254,7 +254,7 @@ mainopens.Parent = mainopen
     )
     end
  
- do  local ui =  game:GetService("CoreGui").RobloxGui.Modules:FindFirstChild("SWATCHECKER HUB")  if ui then ui:Destroy() end end
+ do  local ui =  game:GetService("CoreGui").RobloxGui.Modules:FindFirstChild("ZENHUB")  if ui then ui:Destroy() end end
  
  function Update:Window(text,logo,keybind)
  local osfunc = {}
@@ -265,14 +265,14 @@ mainopens.Parent = mainopen
  local keybind = keybind or Enum.KeyCode.RightControl
  local yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
  
- local SWATCHECKERHUB = Instance.new("ScreenGui")
- SWATCHECKERHUB.Name = "ZENHUB"
- SWATCHECKERHUB.Parent = game.CoreGui
- SWATCHECKERHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ local ZENHUB = Instance.new("ScreenGui")
+ ZENHUB.Name = "ZENHUB"
+ ZENHUB.Parent = game.CoreGui
+ ZENHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
  
  local Main = Instance.new("Frame")
  Main.Name = "Main"
- Main.Parent = SWATCHECKER HUB
+ Main.Parent = ZENHUB
  Main.ClipsDescendants = true
  Main.AnchorPoint = Vector2.new(0.5,0.5)
  Main.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
@@ -306,7 +306,7 @@ mainopens.Parent = mainopen
  Logo.BackgroundTransparency = 1.000
  Logo.Position = UDim2.new(-0.01, 0,-0.319, 0)
  Logo.Size = UDim2.new(0, 55,0, 45)
- Logo.Image = "https://i.pinimg.com/564x/08/25/06/082506876327d31cb742bdfa55ebef87.jpg://"..tostring(logo)
+ Logo.Image = "https://cdn4.iconfinder.com/data/icons/people-of-crime-and-protection/512/People_Crime_Protection_squat_team_man-1024.png://"..tostring(logo)
  
  local Name = Instance.new("TextLabel")
  Name.Name = "Name"
@@ -566,7 +566,7 @@ local NotifHolderUIStroke = Instance.new("UIStroke")
 local Line = Instance.new("Frame")
 
 NotificationHold.Name = "NotificationHold"
-NotificationHold.Parent = SWATCHECKER HUB
+NotificationHold.Parent = ZENHUB
 NotificationHold.BackgroundColor3 = _G.WindowBackgroundColor
 NotificationHold.BackgroundTransparency = 1
 NotificationHold.BorderSizePixel = 0
@@ -4480,7 +4480,7 @@ Setting:Toggle("Fast Attack [New]",true,function(value)
  _G.FastAttack = value
 end)
 
--- [[ Fast Attack Fixed / SWATCHECKER HUB / Dont edit , or ur will be messed up! ]]
+-- [[ Fast Attack Fixed / Shadow Hub / Dont edit , or ur will be messed up! ]]
 
 -- [[ Properties ]]
 
@@ -5801,7 +5801,7 @@ local NotificationHolder = loadstring(game:HttpGet("https://raw.githubuserconten
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 wait(1)
 Notification:Notify(
-   {Title = "SWATCHECKER HUB", Description = "You Have Max Observation"},
+   {Title = "SWATCHECKER HUB", Description = "En İyi Türk Blox Fruit Hilesi"},
    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "option"},
    {Image = "https://cdn4.iconfinder.com/data/icons/people-of-crime-and-protection/512/People_Crime_Protection_squat_team_man-1024.png", ImageColor = Color3.fromRGB(255, 84, 84), Callback = function(State) print(tostring(State)) end}
 )
